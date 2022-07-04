@@ -9,6 +9,7 @@ def get_calculation (num1,num2,operation):
 	elif operation == "*":
 		print(f"The answer is {int(num1)* int(num2)}")
 	else:
+		print("invalid operation")
 		return None
 
 
@@ -19,10 +20,6 @@ def main():
 	if num1.isdigit() and num2.isdigit():
 		operation=input("Choose the operation (+, -, /, *):") 
 		answer = get_calculation(num1,num2,operation)
-		if answer == None:
-			print("The operation is not valid ")
-		else:
-			print("the answer is "+ str(answer))
 	else:
 		print("The input is not number ")
 
